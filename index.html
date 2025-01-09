@@ -7,5 +7,61 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Sing-Up</title>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <div class="logo"></div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1686763963223-e4338403f25f?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fjord by Jacob Meissner" width="640" height="1137">
+        <figcaption>Photo by <a href="https://unsplash.com/@jme1007?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jacob Meissner</a> on <a href="https://unsplash.com/photos/a-large-body-of-water-surrounded-by-mountains-yvYL1Zdq6i4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </figcaption>
+    </figure>
+    </section>
+    <aside class="form">
+      <p class="form-para">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. <br />
+        Sing up <em>now</em> to get started.
+      </p>
+      <p class="form-para">You <em>know</em> you want to.</p>
+      <form action="post">
+        <div class="container">
+          <legend>Let's do this</legend>
+          <p>
+            <label for="first-name"><span>first name</span></label
+            ><input type="text" id="first-name" name="first_name" minlength="2" required/>
+          </p>
+          <p>
+            <label for="last-name"><span>last name</span></label
+            ><input type="text" id="last-name" name="last_name" />
+          </p>
+          <p>
+            <label for="email"><span>email</span></label
+            ><input type="email" id="email" name="user_email" placeholder="thor@odinson.com" required/>
+          </p>
+          <p>
+            <label for="phone"><span>phone number</span></label
+            ><input type="tel" id="phone" name="user_phone" minlength="11" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="8-800-999-9999" />
+          </p>
+          <p>
+            <label for="password"><span>password</span></label
+            ><input type="password" id="password" name="password" minlength="8" required/>
+          </p>
+          <p>
+            <label for="confirm-password"><span>confirm password</span></label
+            ><input
+              type="password"
+              id="confirm-password"
+              name="confirm_password"
+              minlength="8"
+              required
+            />
+          </p>
+        </div>
+        <p>
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </p>
+      </form>
+    </aside>
+  </body>
 </html>

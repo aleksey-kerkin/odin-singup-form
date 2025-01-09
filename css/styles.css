@@ -62,3 +62,25 @@ h6 {
   isolation: isolate;
 }
 /* end */
+
+body {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+section {
+  flex-shrink: 0;
+}
+
+figcaption {
+  color: aliceblue;
+  position: relative;
+  text-align: center;
+  top: -18vh;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+}

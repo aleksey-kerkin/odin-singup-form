@@ -160,10 +160,6 @@ label {
   color: dimgray;
 }
 
-input {
-  width: 18rem;
-}
-
 p > label {
   display: block;
 }
@@ -181,7 +177,6 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  border-top: 1px solid #000;
   border: 1px solid transparent;
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.2);
   background-color: white;
@@ -194,4 +189,24 @@ a {
 .button-para > a {
   color: rgb(0, 97, 0);
   text-decoration: none;
+}
+
+input {
+  font-size: 1rem;
+  font-weight: normal;
+  outline: none;
+  border: 2px solid dimgray;
+  border-radius: 5px;
+  width: 18rem;
+  height: 2rem;
+  padding-left: 0.3rem;
+}
+
+input:focus {
+  border: 2px solid rgb(0, 125, 255);
+  box-shadow: 2px 3px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+input[type="password"]:invalid {
+  border: 2px solid rgb(255, 50, 20);
 }

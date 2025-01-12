@@ -63,6 +63,11 @@ h6 {
 }
 /* end */
 
+@font-face {
+  font-family: "Norse Bold";
+  src: url(../assets/Norse-Bold.woff2);
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -73,14 +78,57 @@ section {
   flex-shrink: 0;
 }
 
+figure > img {
+  height: 100vh;
+  width: auto;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  color: aliceblue;
+  top: -73vh;
+  font-family: "Norse Bold";
+  font-size: 5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 figcaption {
   color: aliceblue;
   position: relative;
   text-align: center;
-  top: -18vh;
+  top: -5vh;
 }
 
 aside {
+  margin: 150px 200px 150px 100px;
   display: flex;
   flex-direction: column;
+}
+
+p {
+  padding: 15px;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-right: clamp(20px, 65vh, 70vh);
+}
+
+p > label {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
